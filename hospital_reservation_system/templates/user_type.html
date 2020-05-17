@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>User Type</h2>
+        <h3>Choose User Type</h3>
+        <form action='/user_type' method='POST'>
+            <label><input type='checkbox' name='type' value='patient'>Patient</label><br>
+            <label><input type='checkbox' name='type' value='clinic'>Clinic</label><br>
+            <label><input type='checkbox' name='type' value='pharmacy'>Pharmacy</label><br>
+            <label><input type='checkbox' name='type' value='extra'>Extra Store</label><br>
+            <p><input type='submit' value='Submit'></p>
+        </form>
+        {{result}}
+    </body>    
+</html>

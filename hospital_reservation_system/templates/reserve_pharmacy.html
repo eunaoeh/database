@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/reserve_pharmacy" method="POST">
+            <h4>Reserve Clinic</h4>
+            <hr>
+            <h4>Reservation</h4>
+            {{result}}
+            <hr>
+            Patient Name: <input type='text' name="pname" placeholder="Name">
+            <br>
+            Patient Phone: <input type='text' name="pnumber" placeholder="Phone Number">
+            <br>
+            Clinic Name: <input type='text' name = 'cname' placeholder="Clinic Name">
+            <br>
+            Pharmacy Name: <input type='text' name="phname" placeholder="Pharmacy Name">
+            <br>
+            Pharmacy ID: <input type='text' name="phid" placeholder="Pharmacy ID">
+            <br>
+            <input type='submit' value='Sumbit Reservation'>
+            <hr>
+            <h4>Prescription List</h4>
+            <pre>{{pre}}</pre>
+            <hr>
+            <h4>Pharmacy List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

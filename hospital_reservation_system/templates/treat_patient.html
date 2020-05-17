@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/clinic">Back</a></div>
+        <hr>
+        <h3> CLINIC : {{name}} {{hpid}}</h3>
+        <hr>
+        <form action="/clinic_prescribe", method = "POST">
+            Enter Information of Patient to Prescribe <br>
+            Name: <input type='text' name="Name" placeholder="Name"><br>
+            Phone: <input type='text' name="Phone" placeholder="Phone"><br>
+            Date: <input type='text' name='year', placeholder="YYYY"> - <input type='text' name='mon', placeholder="MM"> - <input type='text' name='date', placeholder="DD">
+            <input type='text' name='hour', placeholder="HH"> : <input type='text' name='min', placeholder="MM"><br>
+            Name of Medicine: <input type='text', name='medicine', placeholder="Medicine"><br>
+            Dosage per time: <input type="text", name='timeDosage', placeholder="Dosage"><br>
+            Dosage per day: <input type='text', name="dayDosage", placeholder="Dosage"><br>
+            Total Dosage: <input type="text", name="total", placeholder="Total Dosage"><br>
+            <input type="submit" value="Prescribe">
+            <hr>
+            <h4>CLINIC LIST</h4>
+            <hr>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

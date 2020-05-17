@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/clinic">Back</a></div>
+        <hr>
+        <h3> CLINIC : {{name}} {{hpid}}</h3>
+        <hr>
+        <form action="/clinic_list_all", method="POST">
+            <h4>CLINIC LIST</h4>
+            <hr>
+            <h3>Search Record</h3>
+            Name: <input type='text' name="Name" placeholder="Name"><br>
+            Phone: <input type='text' name="Phone" placeholder="Phone"><br>
+            Date: <input type='text' name='year', placeholder="YYYY"> - <input type='text' name='mon', placeholder="MM"> - <input type='text' name='date', placeholder="DD">
+            <br><input type=submit value=Search>
+            <hr>
+            <h3>Search Result</h3>
+            <pre>{{result}}</pre>
+            <br>
+            <hr>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

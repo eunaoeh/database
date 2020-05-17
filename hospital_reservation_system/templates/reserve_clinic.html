@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/reserve_clinic" method="POST">
+            <h4>Reserve Clinic</h4>
+            <hr>
+            <h4>Reservation</h4>
+            {{result}}
+            <hr>
+            Patient Name: <input type='text' name="pname" placeholder="Name">
+            <br>
+            Patient Phone: <input type='text' name="pnumber" placeholder="Phone Number">
+            <br>
+            Clinic Name: <input type='text' name="cname" placeholder="Clinic Name">
+            <br>
+            Clinic ID: <input type='text' name="cid" placeholder="Clinic ID">
+            <br>
+            Reservation Date: <input type='text' name='year' placeholder="YYYY"> - <input type='text' name='mon' placeholder="MM"> - <input type='text' name='date' placeholder="DD">
+            <br>
+            Reservation Time: <input type='text' name='hour' placeholder="HH"> : <input type='text' name='min' placeholder="MM">
+            <br>
+            <input type='submit' value='Sumbit Reservation'>
+            <hr>
+            <h4>Clinic List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

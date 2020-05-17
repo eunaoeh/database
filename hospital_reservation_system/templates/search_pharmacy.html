@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/search_pharmacy" method="POST">
+            <h4>Search Clinic by Distance</h4>
+            <hr>
+            Distance: <input type='text' name="dis" placeholder="Distance(km)">
+            <input type='submit' value='Search'>
+            <hr>
+            If you want to find more pharmacies around Hanyang University, Enter the Distance below. It takes some time to add.<br>
+            Wider Distance: <input type='text' name='wdis' placeholder="Distance(km)">
+            <input type='submit' value="Search">
+            <br>
+            <hr>
+            <h4>Search Result</h4>
+            <pre>{{result}}</pre>
+        </form>
+    </body>
+</html>

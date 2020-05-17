@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/search_clinic_type" method="POST">
+            <h4>Search Clinic by Medical Department</h4>
+            <hr>
+            <h4>Search Result</h4>
+            <pre>{{result}}</pre>
+            <hr>
+            Medical Department: <input type='text' name="depart" placeholder="Medical Department">
+            <input type='submit' value='Search'>
+            <br>
+            <hr>
+            <h4>Department List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

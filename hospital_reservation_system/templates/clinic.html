@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <hr>
+        <h3> CLINIC : {{name}} {{hpid}}</h3>
+        <hr>
+        <form action="/clinic">
+            <h4>CLINIC INFO</h4>
+            <hr>
+            <pre>Name: {{name}}</pre>
+            <pre>ID: {{hpid}}</pre>
+            <pre>Number of Doctors: {{number}}</pre>
+            <pre>Medical Department: {{treatment}}</pre>
+            <pre>Distance From User: {{distance}} km</pre>
+            <pre>Latititude: {{lat}}</pre>
+            <pre>Logitude: {{lng}}</pre>
+            <pre>Location: {{location}}</pre>
+            <pre>Open Time: <br>{{time}}</pre>
+            <hr>
+            <h4><font size = 4>Function</font></h4>
+            <ul style="list-style-type:disc;">
+                <li><a href="/clinic_reserve_list"><font size = 4>See a Current Reserve List of Patients</font></a></li><br>
+                <li><a href="/treat_patient"><font size = 4>Prescribe</font></a></li><br>
+                <li><a href="/clinic_list_all"><font size = 4>See All Reserve List of Patients</font></a></li><br>
+            </ul>
+        </form>
+    </body>
+</html>

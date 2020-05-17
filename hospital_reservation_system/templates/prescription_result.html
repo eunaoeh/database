@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <form action="prescription_result", method="POST">
+            <h3>Prescription</h3>
+            <hr>
+            Patient's Name: {{pname}} <br>
+            Patient's Phone: {{pnumber}}<br>
+            Date: {{date}}<br>
+            Clinic: {{clinic}} <br>
+            Medicine Name: {{medicine}}<br>
+            Dosage Per Time: {{dosage}}<br>
+            Dosage Per Day: {{daydosage}}<br>
+            Total Dosage: {{total}}<br>
+            Pharmacy: {{pharmacy}}<br>
+            Prescription Date: {{pdate}}<br>
+            Extra Info: {{extra}}<br>
+            Result: {{result}}<br>
+            <hr>
+            <h4>Search Prescription</h4>
+            <br>Clinic Name: <input type='text' name='clinic' placeholder="Clinic">
+            <br>Pharmacy Name: <input type='text' name='pharmacy' placeholder="Pharmacy">
+            <br>Date: <input type='text' name='year', placeholder="YYYY"> - <input type='text' name='mon', placeholder="MM"> - <input type='text' name='date', placeholder="DD">
+            <br>Time: <input type='text' name='hour', placeholder="HH"> : <input type='text' name='min', placeholder="MM"><br>
+            <br><input type='submit' value='Search'>
+            <hr>
+            <h4>Pharmacy Reservation List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

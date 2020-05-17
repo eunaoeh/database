@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/register_most_visited" method="POST">
+            <h4>Register List</h4>
+            <pre>{{favor}}</pre>
+            <hr>
+            <h4>Register Result</h4>
+            {{result}}
+            <hr>
+            <h4>Search Record</h4>
+            Clinic Name: <input type='text' name="cname" placeholder="Clinic Name"><br>
+            Clinic ID: <input type='text' name='cid' placeholder="Clinic ID">
+            <input type="submit" value="Register">
+            <br>
+            <br>
+            <hr>
+            <h4>Clinic List</h4>
+            <hr>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/recent_clinic" method='GET'>
+            <h4>Recent Clinic Result</h4>
+            <hr>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

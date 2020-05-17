@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <hr>
+        <h3> Pharmacy : {{name}} {{hpid}}</h3>
+        <hr>
+        <form action="/store">
+            <h4>Pharmacy INFO</h4>
+            <hr>
+            <pre>Name: {{name}}</pre>
+            <pre>ID: {{hpid}}</pre>
+            <pre>Latititude: {{lat}}</pre>
+            <pre>Logitude: {{lng}}</pre>
+            <pre>Location: {{location}}</pre>
+            <hr>
+            <h4><font size = 4>Function</font></h4>
+            <ul style="list-style-type:disc;">
+                <li><a href="/pharmacy_reserve_list"><font size = 4>See a Current Reserve List of Patients</font></a></li><br>
+                <li><a href="/prescribe_patient"><font size = 4>Prescribe</font></a></li><br>
+            </ul>
+        </form>
+    </body>
+</html>

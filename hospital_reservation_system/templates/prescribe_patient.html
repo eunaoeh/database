@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/store">Back</a></div>
+        <hr>
+        <form action="/prescribe_patient" method="POST">
+            <h4>Prescription</h4>
+            <hr>
+            {{result}}
+            <hr>
+            Patient Name: <input type='text' name="pname" placeholder="Name"><br>
+            Patient Phone: <input type='text' name="pnumber" placeholder="Phone Number"><br>
+            Clinic Name: <input type='text' name='cname' placeholder="Clinic Name"><br>
+            <input type="radio" name="type" value="2">Available
+            <input type="radio" name="type" value="3">Unavailable
+            <br>
+            Fill in the Form below, only if you click "Available"<br>
+            Date: <input type='text' name='year', placeholder="YYYY"> - <input type='text' name='mon', placeholder="MM"> - <input type='text' name='date', placeholder="DD">
+            <input type='text' name='hour', placeholder="HH"> : <input type='text' name='min', placeholder="MM"><br>
+            Extra: <input type='text' name='extra', placeholder="Extra">
+            <input type="submit" value="Prescribe">
+            <hr>
+            <h4>Reservation List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>

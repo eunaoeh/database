@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div><a href="/">Sign Out</a></div>
+        <br>
+        <div><a href="/patient">Back</a></div>
+        <hr>
+        <h3> Patient Homepage: {{name}}</h3>
+        <hr>
+        <form action="/search_clinic_map" method="POST">
+            <h4>Search Clinic With Map</h4>
+            <hr>
+            Clinic Name: <input type='text' name="cname" placeholder="Name">
+            Clinic Id: <input type='text' name='cid' placeholder="Clinic ID">
+            <input type='submit' value="Search">
+            <br>
+            <hr>
+            <h4>Clinic List</h4>
+            <pre>{{list}}</pre>
+        </form>
+    </body>
+</html>
